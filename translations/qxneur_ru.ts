@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU" sourcelanguage="english">
+<TS version="2.0" language="ru_RU">
 <context>
-    <name>AbbreviationEditDialog</name>
+    <name>QXNAbbreviationEditDialog</name>
     <message>
-        <location filename="../src/Config/AbbreviationEditDialog.ui"/>
+        <location filename="../src/Config/QXNAbbreviationEditDialog.ui"/>
         <source>Edit abbreviation</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать аббревиатуру</translation>
     </message>
     <message>
         <location/>
         <source>Abbreviation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Аббревиатура:</translation>
     </message>
     <message>
         <location/>
         <source>Full text:</source>
-        <translation type="unfinished"></translation>
+        <translation>Полный текст:</translation>
     </message>
 </context>
 <context>
-    <name>ApplicationSettingsDialog</name>
+    <name>QXNApplicationSettingsDialog</name>
     <message>
-        <location filename="../src/Config/ApplicationSettingsDialog.ui"/>
+        <location filename="../src/Config/QXNApplicationSettingsDialog.ui"/>
         <source>Custom application settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки приложения</translation>
     </message>
     <message>
         <location/>
         <source>Window name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя окна:</translation>
     </message>
     <message>
         <location/>
         <source>Click to select the application window</source>
-        <translation type="unfinished"></translation>
+        <translation>Нажмите, чтобы выбрать окно приложения</translation>
     </message>
     <message>
         <location/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location/>
         <source>Store layout for the whole application, not window</source>
-        <translation type="unfinished"></translation>
+        <translation>Восстановить раскладку для всего приложения</translation>
     </message>
     <message>
         <location/>
         <source>Layout switching</source>
-        <translation type="unfinished"></translation>
+        <translation>Переключение раскладки</translation>
     </message>
     <message>
         <location/>
         <source>Force automatical layout switching</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматическое переключение раскладки</translation>
     </message>
     <message>
         <location/>
         <source>Force manual layout switching</source>
-        <translation type="unfinished"></translation>
+        <translation>Ручное переключение раскладки</translation>
     </message>
     <message>
         <location/>
         <source>Don&apos;t process the input for this application</source>
-        <translation type="unfinished"></translation>
+        <translation>Не обробатывать ввод для этого приложения</translation>
     </message>
 </context>
 <context>
     <name>QXNApplicationsModel</name>
     <message>
-        <location filename="../src/Config/QXNApplicationsModel.cpp" line="+46"/>
+        <location filename="../src/Config/QXNApplicationsModel.cpp" line="+44"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Приложение</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -82,27 +82,27 @@
     <message>
         <location line="+1"/>
         <source>Switching</source>
-        <translation type="unfinished"></translation>
+        <translation>Переключение</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Умолчание</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Force automatical</source>
-        <translation type="unfinished"></translation>
+        <translation>Принудительно автоматически</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Force manual</source>
-        <translation type="unfinished"></translation>
+        <translation>Принудительно вручную</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Don&apos;t process</source>
-        <translation type="unfinished"></translation>
+        <translation>Не обрабатывать</translation>
     </message>
 </context>
 <context>
@@ -110,12 +110,12 @@
     <message>
         <location filename="../src/Config/QXNConfig.cpp" line="+44"/>
         <source>Error initializing xnconfig.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка инициализации xnconfig.</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Error loading config</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка загрузки конфигурации</translation>
     </message>
 </context>
 <context>
@@ -123,317 +123,322 @@
     <message>
         <location filename="../src/Config/QXNConfigDialog.ui"/>
         <source>QXNeur settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки QXNeur</translation>
     </message>
     <message>
         <location/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Общие</translation>
     </message>
     <message>
         <location/>
         <source>Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка</translation>
     </message>
     <message>
         <location/>
         <source>Keyboard shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Клавиатурные сочетания</translation>
     </message>
     <message>
         <location/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Приложения</translation>
     </message>
     <message>
         <location/>
         <source>Sounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Звуки</translation>
     </message>
     <message>
         <location/>
         <source>Abbreviations</source>
-        <translation type="unfinished"></translation>
+        <translation>Аббревиатуры</translation>
     </message>
     <message>
         <location/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Внешний вид</translation>
     </message>
     <message>
         <location/>
         <source>Work in manual mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Работа в ручном режиме</translation>
     </message>
     <message>
         <location/>
         <source>Self educate</source>
-        <translation type="unfinished"></translation>
+        <translation>Обучение</translation>
     </message>
     <message>
         <location/>
         <source>Check language during input</source>
-        <translation type="unfinished"></translation>
+        <translation>Проверьте язык во время ввода</translation>
     </message>
     <message>
         <location/>
         <source>Save selection after layout switching</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить выделенное после смены раскладки</translation>
     </message>
     <message>
         <location/>
         <source>Log the keyboard input</source>
-        <translation type="unfinished"></translation>
+        <translation>Журналирование клавиатурного ввода</translation>
+    </message>
+    <message>
+        <location/>
+        <source>Autocompletion mode</source>
+        <translation>Автодополнение</translation>
     </message>
     <message>
         <location/>
         <source>Typography</source>
-        <translation type="unfinished"></translation>
+        <translation>Оформление</translation>
     </message>
     <message>
         <location/>
         <source>Correct aCCIDENTAL CapsLock</source>
-        <translation type="unfinished"></translation>
+        <translation>Корректировать сЛУЧАЙНЫЙ CapsLock</translation>
     </message>
     <message>
         <location/>
         <source>Correct two CApital letters</source>
-        <translation type="unfinished"></translation>
+        <translation>Корректировать две ЗАглавные буквы</translation>
     </message>
     <message>
         <location/>
         <source>Correct space with punctuation</source>
-        <translation type="unfinished"></translation>
+        <translation>Корректировать пробелы с пунктуацией</translation>
     </message>
     <message>
         <location/>
         <source>Disable CapsLock button</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключить кнопку Caps Lock</translation>
     </message>
     <message>
         <location/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Расширенные</translation>
     </message>
     <message>
         <location/>
         <source>Don&apos;t process word on Enter or Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Не обрабатывать слово при Enter или Tab</translation>
     </message>
     <message>
         <location/>
         <source>Flush internal buffers after Enter or Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Освободить внутренние буферы после Enter или Tab</translation>
     </message>
     <message>
         <location/>
         <source>Misc. options</source>
-        <translation type="unfinished"></translation>
+        <translation>Разные настройки</translation>
     </message>
     <message>
         <location/>
         <source>Event send delay (ms.):</source>
-        <translation type="unfinished"></translation>
+        <translation>Задержка посылки события (мс):</translation>
     </message>
     <message>
         <location/>
         <source>Logging level:</source>
-        <translation type="unfinished"></translation>
+        <translation>Уровень логированния:</translation>
     </message>
     <message>
         <location/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <location/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Предупреждение</translation>
     </message>
     <message>
         <location/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Логированние</translation>
     </message>
     <message>
         <location/>
         <source>Debug</source>
-        <translation type="unfinished"></translation>
+        <translation>Отладка</translation>
     </message>
     <message>
         <location/>
         <source>Trace</source>
-        <translation type="unfinished"></translation>
+        <translation>Следить</translation>
     </message>
     <message>
         <location/>
         <source>Remember layout for every window</source>
-        <translation type="unfinished"></translation>
+        <translation>Запомнить раскладку для каждого окна</translation>
     </message>
     <message>
         <location/>
         <source>Custom applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользовательские приложения</translation>
     </message>
     <message>
         <location/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить</translation>
     </message>
     <message>
         <location/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <location/>
         <source>Edit...</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить...</translation>
     </message>
     <message>
         <location/>
         <source>Enable sounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить звуки</translation>
     </message>
     <message>
         <location/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Действие</translation>
     </message>
     <message>
         <location/>
         <source>Sound file</source>
-        <translation type="unfinished"></translation>
+        <translation>Звуковой файл</translation>
     </message>
     <message>
         <location/>
         <source>XNeur start</source>
-        <translation type="unfinished"></translation>
+        <translation>XNeur запущен</translation>
     </message>
     <message>
         <location/>
         <source>XNeur reload</source>
-        <translation type="unfinished"></translation>
+        <translation>XNeur перезапущен</translation>
     </message>
     <message>
         <location/>
         <source>XNeur stop</source>
-        <translation type="unfinished"></translation>
+        <translation>XNeur остановлен</translation>
     </message>
     <message>
         <location/>
         <source>Layout 1 key press</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 1 клавиша нажата</translation>
     </message>
     <message>
         <location/>
         <source>Layout 2 key press</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 2 клавиша нажата</translation>
     </message>
     <message>
         <location/>
         <source>Layout 3 key press</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 3 клавиша нажата</translation>
     </message>
     <message>
         <location/>
         <source>Layout 4 key press</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 4 клавиша нажата</translation>
     </message>
     <message>
         <location/>
         <source>Layout 1 activated</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 1 активирована</translation>
     </message>
     <message>
         <location/>
         <source>Layout 2 activated</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 2 активирована</translation>
     </message>
     <message>
         <location/>
         <source>Layout 3 activated</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 3 активирована</translation>
     </message>
     <message>
         <location/>
         <source>Layout 4 activated</source>
-        <translation type="unfinished"></translation>
+        <translation>Раскладка 4 активирована</translation>
     </message>
     <message>
         <location/>
         <source>Automatic word convert</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматическое преобразование слова</translation>
     </message>
     <message>
         <location/>
         <source>Manual word convert</source>
-        <translation type="unfinished"></translation>
+        <translation>Ручное конвертированние слова</translation>
     </message>
     <message>
         <location/>
         <source>Convert last string</source>
-        <translation type="unfinished"></translation>
+        <translation>Конвертировать последнию строку</translation>
     </message>
     <message>
         <location/>
         <source>Convert selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Конвертировать выделенное</translation>
     </message>
     <message>
         <location/>
         <source>Transliterate selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Транслитерировать выбор</translation>
     </message>
     <message>
         <location/>
         <source>Change selection case</source>
-        <translation type="unfinished"></translation>
+        <translation>Измените выделенное</translation>
     </message>
     <message>
         <location/>
         <source>Replace abbreviation</source>
-        <translation type="unfinished"></translation>
+        <translation>Заменить аббревиатуру</translation>
     </message>
     <message>
         <location/>
         <source>Correct aCCIDENTIAL CapsLock</source>
-        <translation type="unfinished"></translation>
+        <translation>Корректировать сЛУЧАЙНЫЙ CapsLock</translation>
     </message>
     <message>
         <location/>
         <source>Correct TWo capital letters</source>
-        <translation type="unfinished"></translation>
+        <translation>Корректировать ДВе заглавные буквы</translation>
     </message>
     <message>
         <location/>
         <source>Execute user action</source>
-        <translation type="unfinished"></translation>
+        <translation>Выполнить пользовательское действие</translation>
     </message>
     <message>
         <location/>
         <source>Ignore layout for abbreviations</source>
-        <translation type="unfinished"></translation>
+        <translation>Игнорировать раскладку для аббревиатур</translation>
     </message>
     <message>
         <location/>
         <source>Abbreviation</source>
-        <translation type="unfinished"></translation>
+        <translation>Аббревиатура</translation>
     </message>
     <message>
         <location/>
         <source>Full text</source>
-        <translation type="unfinished"></translation>
+        <translation>Полный текст</translation>
     </message>
     <message>
-        <location filename="../src/Config/QXNConfigDialog.cpp" line="+350"/>
+        <location filename="../src/Config/QXNConfigDialog.cpp" line="+426"/>
         <source>QXNeur</source>
-        <translation type="unfinished"></translation>
+        <translation>QXNeur</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Abbreviation &quot;%1&quot; already exists. Do you want to replace it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Аббревиатура &quot;%1&quot; уже существует. Вы хотите ее заменить?</translation>
     </message>
 </context>
 <context>
@@ -441,12 +446,12 @@
     <message>
         <location filename="../src/QXNKeyboard.cpp" line="+24"/>
         <source>XKB header and library version does not match. The program may work incorrectly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Заголовки и библиотеки XKB не соответствуют. Приложение может работать не корректно.</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>The X Server does not support a compatible XKB extension.</source>
-        <translation type="unfinished"></translation>
+        <translation>X-сервер не поддерживает совместимое расширение XKB.</translation>
     </message>
 </context>
 <context>
@@ -454,87 +459,87 @@
     <message>
         <location filename="../src/QXNLanguage.cpp" line="+98"/>
         <source>Armenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Армянский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Belarusian</source>
-        <translation type="unfinished"></translation>
+        <translation>Белоруский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"></translation>
+        <translation>Болгарский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Чешский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation>Английский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Estonian</source>
-        <translation type="unfinished"></translation>
+        <translation>Эстонский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Французкий</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Германский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Kazakh</source>
-        <translation type="unfinished"></translation>
+        <translation>Казахский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Latvian</source>
-        <translation type="unfinished"></translation>
+        <translation>Латвийский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Литовский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Polish</source>
-        <translation type="unfinished"></translation>
+        <translation>Польский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Румынский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Ресский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Испанский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation>Украинский</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Неизвестный</translation>
     </message>
 </context>
 <context>
@@ -542,17 +547,17 @@
     <message>
         <location filename="../src/QXNMenu.cpp" line="+11"/>
         <source>Manual mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ручной режим</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Settings...</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки...</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Выход</translation>
     </message>
 </context>
 <context>
@@ -560,7 +565,7 @@
     <message>
         <location filename="../src/QXNTrayIcon.cpp" line="+39"/>
         <source>QXNeur: current layout is %1</source>
-        <translation type="unfinished"></translation>
+        <translation>QXNeur: текущая раскладка %1</translation>
     </message>
 </context>
 <context>
@@ -568,7 +573,7 @@
     <message>
         <location filename="../src/QXNeur.cpp" line="+49"/>
         <source>Can not start xneur (unknown error)</source>
-        <translation type="unfinished"></translation>
+        <translation>Не возможно запустить xneur (неизвестная ошибка)</translation>
     </message>
 </context>
 </TS>
