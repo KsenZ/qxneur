@@ -14,10 +14,10 @@ class QXNKeyboardPrivate;
 
 class QXNKeyboard : public QObject
 {
-  Q_OBJECT
-  Q_DECLARE_PRIVATE(QXNKeyboard);
+    Q_OBJECT
+    Q_DECLARE_PRIVATE(QXNKeyboard);
 
-  public:
+public:
     QXNKeyboard(QObject* parent=0);
     ~QXNKeyboard();
 
@@ -27,14 +27,14 @@ class QXNKeyboard : public QObject
 
     void x11Event(XEvent* event);
 
-  signals:
+signals:
     void groupChanged(QXNLanguage::Language);
     void layoutChanged();
 
-  public slots:
+public slots:
     void nextGroup();
 
-  protected:
+protected:
     QXNKeyboardPrivate* d_ptr;
 };
 

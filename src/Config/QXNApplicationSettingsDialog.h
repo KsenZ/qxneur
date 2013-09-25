@@ -10,15 +10,15 @@
 // Ui
 namespace Ui
 {
-  class QXNApplicationSettingsDialog;
+class QXNApplicationSettingsDialog;
 };
 
 
 class QXNApplicationSettingsDialog : public QDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  public:
+public:
     QXNApplicationSettingsDialog(QWidget* parent = 0);
     ~QXNApplicationSettingsDialog();
 
@@ -28,12 +28,12 @@ class QXNApplicationSettingsDialog : public QDialog
 
     void setData(const QString& application, bool wholeApplication, LayoutSwitching::Mode mode);
 
-  private slots:
+private slots:
     void on_windowSelectButton_clicked();
 
     void verify();
 
-  private:
+private:
     Ui::QXNApplicationSettingsDialog* ui;
 };
 

@@ -7,10 +7,10 @@
 class PropertyMapperPrivate;
 class PropertyMapper : public QObject
 {
-  Q_OBJECT
-  Q_PROPERTY(bool isChanged READ isChanged NOTIFY propertiesChanged)
+    Q_OBJECT
+    Q_PROPERTY(bool isChanged READ isChanged NOTIFY propertiesChanged)
 
-  public:
+public:
     PropertyMapper(QObject* parent=0);
     ~PropertyMapper();
 
@@ -26,14 +26,14 @@ class PropertyMapper : public QObject
 
     bool isChanged();
 
-  signals:
+signals:
     void propertiesChanged(bool);
 
-  public slots:
+public slots:
     void load();
     void apply();
 
-  private:
+private:
     QScopedPointer<PropertyMapperPrivate> d_ptr;
     Q_DECLARE_PRIVATE(PropertyMapper)
     Q_PRIVATE_SLOT(d_func(), void _q_propertyChanged())

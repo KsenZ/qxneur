@@ -10,16 +10,16 @@
 
 class QXNLanguage : public QObject
 {
-  Q_OBJECT
-  Q_ENUMS(Language)
+    Q_OBJECT
+    Q_ENUMS(Language)
 
-  public:
+public:
     QXNLanguage(QObject* parent=0);
     ~QXNLanguage();
 
     enum Language { Unknown, Armenian, Belarusian, Bulgarian, Czech, German, Danish, English, Estonian, Spanish,
-      Finnish, French, Georgian, Greek, Hungarian, Kazakh, Israelian, Icelandic, Italian, Lithuanian, Latvian,
-      Macedonian, Norwegian, Polish, Portugese, Romanian, Russian, Slovak, Swedish, Thai, Ukrainian, Vietnamese};
+                    Finnish, French, Georgian, Greek, Hungarian, Kazakh, Israelian, Icelandic, Italian, Lithuanian, Latvian,
+                    Macedonian, Norwegian, Polish, Portugese, Romanian, Russian, Slovak, Swedish, Thai, Ukrainian, Vietnamese};
 
     static Language layoutNameToLanguage(const QString&);
     static QString languageToText(Language);

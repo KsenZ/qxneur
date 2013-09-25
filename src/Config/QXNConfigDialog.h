@@ -4,7 +4,7 @@
 // Ui
 namespace Ui
 {
-  class QXNConfigDialog;
+class QXNConfigDialog;
 };
 
 // Qt
@@ -20,17 +20,17 @@ class PropertyMapper;
 
 class QXNConfigDialog : public QDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  public:
+public:
     QXNConfigDialog(QXNConfig* config, QWidget* parent = 0);
     ~QXNConfigDialog();
 
-  public slots:
+public slots:
     void run();
     void accept();
 
-  protected slots:
+protected slots:
     void on_buttonBox_clicked(QAbstractButton*);
 
     // Applications
@@ -51,7 +51,7 @@ class QXNConfigDialog : public QDialog
 
     void customApplicationsSelectionChanged();
 
-  private:
+private:
     Ui::QXNConfigDialog* ui;
     PropertyMapper* mapper;
     QXNConfig* m_xnconfig;

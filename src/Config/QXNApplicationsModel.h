@@ -11,9 +11,9 @@
 
 class QXNApplicationsModel : public QAbstractTableModel
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  public:
+public:
     QXNApplicationsModel(QObject* parent = 0);
     virtual ~QXNApplicationsModel() { }
 
@@ -31,7 +31,7 @@ class QXNApplicationsModel : public QAbstractTableModel
 
     void addAppliaction(const QString& windowName, bool layoutRemember, LayoutSwitching::Mode layoutSwitching);
 
-  private:
+private:
     QList<QXNApplicationsModelPrivate> m_data;
 };
 

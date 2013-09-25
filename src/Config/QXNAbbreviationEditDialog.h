@@ -6,20 +6,20 @@
 
 class QXNAbbreviationEditDialog : public QDialog, public Ui::QXNAbbreviationEditDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  public:
+public:
     QXNAbbreviationEditDialog(QWidget* parent=0);
     ~QXNAbbreviationEditDialog();
 
     QString abbreviation() const;
     QString fullText() const;
 
-  public slots:
+public slots:
     void setAbbreviation(const QString&);
     void setFullText(const QString&);
 
-  protected slots:
+protected slots:
     void verify();
 };
 

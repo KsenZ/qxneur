@@ -163,12 +163,12 @@
     <message>
         <location/>
         <source>Work in manual mode</source>
-        <translation>Работа в ручном режиме</translation>
+        <translation>Включить ручной режим переключения</translation>
     </message>
     <message>
         <location/>
         <source>Self educate</source>
-        <translation>Обучение</translation>
+        <translation>Влючить режим самообучения</translation>
     </message>
     <message>
         <location/>

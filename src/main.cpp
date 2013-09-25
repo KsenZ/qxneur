@@ -3,6 +3,6 @@
 
 int main(int argc, char** argv)
 {
-  QXNeur app(argc, argv);
-  return app.exec();
+    QXNeur app(argc, argv);
+    return app.exec();
 }

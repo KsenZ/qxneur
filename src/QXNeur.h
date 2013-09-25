@@ -16,18 +16,18 @@ class QXNConfigDialog;
 
 class QXNeur : public QApplication
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  public:
+public:
     QXNeur(int argc, char** argv);
     ~QXNeur();
 
     bool x11EventFilter(XEvent* event);
 
-  public slots:
+public slots:
     void reloadConfiguration();
 
-  private:
+private:
     QXNKeyboard* keyboard;
     QXNTrayIcon* trayIcon;
     QXNMenu* trayMenu;

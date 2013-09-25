@@ -14,51 +14,51 @@ typedef QMap<QString,QString> StringToStringMap;
 
 class QXNConfig : public QObject
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  // Working mode options
-  Q_PROPERTY(bool manualMode READ manualMode WRITE setManualMode)
-  Q_PROPERTY(bool autoEducate READ autoEducate WRITE setAutoEducate)
-  Q_PROPERTY(bool noProcessOnEnter READ noProcessOnEnter WRITE setNoProcessOnEnter)
-  Q_PROPERTY(bool checkLanguageDuringInput READ checkLanguageDuringInput WRITE setCheckLanguageDuringInput)
-  Q_PROPERTY(bool saveKeyboardLog READ saveKeyboardLog WRITE setSaveKeyboardLog)
-  Q_PROPERTY(bool autoCompletion READ autoCompletion WRITE setAutoCompletion)
+    // Working mode options
+    Q_PROPERTY(bool manualMode READ manualMode WRITE setManualMode)
+    Q_PROPERTY(bool autoEducate READ autoEducate WRITE setAutoEducate)
+    Q_PROPERTY(bool noProcessOnEnter READ noProcessOnEnter WRITE setNoProcessOnEnter)
+    Q_PROPERTY(bool checkLanguageDuringInput READ checkLanguageDuringInput WRITE setCheckLanguageDuringInput)
+    Q_PROPERTY(bool saveKeyboardLog READ saveKeyboardLog WRITE setSaveKeyboardLog)
+    Q_PROPERTY(bool autoCompletion READ autoCompletion WRITE setAutoCompletion)
 
-  // Correction options
-  Q_PROPERTY(bool correctAccidentalCaps READ correctAccidentalCaps WRITE setCorrectAccidentalCaps)
-  Q_PROPERTY(bool correctTwoCapitalLetters READ correctTwoCapitalLetters WRITE setCorrectTwoCapitalLetters)
-  Q_PROPERTY(bool correctSpaceWithPunctuation READ correctSpaceWithPunctuation WRITE setCorrectSpaceWithPunctuation)
-  Q_PROPERTY(bool disableCaps READ disableCaps WRITE setDisableCaps)
+    // Correction options
+    Q_PROPERTY(bool correctAccidentalCaps READ correctAccidentalCaps WRITE setCorrectAccidentalCaps)
+    Q_PROPERTY(bool correctTwoCapitalLetters READ correctTwoCapitalLetters WRITE setCorrectTwoCapitalLetters)
+    Q_PROPERTY(bool correctSpaceWithPunctuation READ correctSpaceWithPunctuation WRITE setCorrectSpaceWithPunctuation)
+    Q_PROPERTY(bool disableCaps READ disableCaps WRITE setDisableCaps)
 
-  // Advanced options
-  Q_PROPERTY(bool saveSelectionAfterConvert READ saveSelectionAfterConvert WRITE setSaveSelectionAfterConvert)
-  Q_PROPERTY(bool flushInternalBuffers READ flushInternalBuffers WRITE setFlushInternalBuffers)
-  Q_PROPERTY(int eventSendDelay READ eventSendDelay WRITE setEventSendDelay)
-  Q_PROPERTY(int logLevel READ logLevel WRITE setLogLevel)
+    // Advanced options
+    Q_PROPERTY(bool saveSelectionAfterConvert READ saveSelectionAfterConvert WRITE setSaveSelectionAfterConvert)
+    Q_PROPERTY(bool flushInternalBuffers READ flushInternalBuffers WRITE setFlushInternalBuffers)
+    Q_PROPERTY(int eventSendDelay READ eventSendDelay WRITE setEventSendDelay)
+    Q_PROPERTY(int logLevel READ logLevel WRITE setLogLevel)
 
-  // Sounds
-  Q_PROPERTY(bool soundMode READ soundMode WRITE setSoundMode)
-  Q_PROPERTY(int volumePercent READ volumePercent WRITE setVolumePercent)
+    // Sounds
+    Q_PROPERTY(bool soundMode READ soundMode WRITE setSoundMode)
+    Q_PROPERTY(int volumePercent READ volumePercent WRITE setVolumePercent)
 
-  // Applications
-  Q_PROPERTY(QStringList excludedApps READ excludedApps WRITE setExcludedApps)
-  Q_PROPERTY(QStringList layoutRememberApps READ layoutRememberApps WRITE setLayoutRememberApps)
-  Q_PROPERTY(QStringList autoApps READ autoApps WRITE setAutoApps)
-  Q_PROPERTY(QStringList manualApps READ manualApps WRITE setManualApps)
-  Q_PROPERTY(bool rememberLayout READ rememberLayout WRITE setRememberLayout)
+    // Applications
+    Q_PROPERTY(QStringList excludedApps READ excludedApps WRITE setExcludedApps)
+    Q_PROPERTY(QStringList layoutRememberApps READ layoutRememberApps WRITE setLayoutRememberApps)
+    Q_PROPERTY(QStringList autoApps READ autoApps WRITE setAutoApps)
+    Q_PROPERTY(QStringList manualApps READ manualApps WRITE setManualApps)
+    Q_PROPERTY(bool rememberLayout READ rememberLayout WRITE setRememberLayout)
 
-  // Abbreviations
-  Q_PROPERTY(bool ignoreLayoutForAbbreviations READ ignoreLayoutForAbbreviations WRITE setIgnoreLayoutForAbbreviations)
-  Q_PROPERTY(StringToStringMap abbreviations READ abbreviations WRITE setAbbreviations)
+    // Abbreviations
+    Q_PROPERTY(bool ignoreLayoutForAbbreviations READ ignoreLayoutForAbbreviations WRITE setIgnoreLayoutForAbbreviations)
+    Q_PROPERTY(StringToStringMap abbreviations READ abbreviations WRITE setAbbreviations)
 
-  // Popups
-  Q_PROPERTY(bool showOSD READ showOSD WRITE setShowOSD)
-  Q_PROPERTY(bool showPopups READ showPopups WRITE setShowPopups)
+    // Popups
+    Q_PROPERTY(bool showOSD READ showOSD WRITE setShowOSD)
+    Q_PROPERTY(bool showPopups READ showPopups WRITE setShowPopups)
 
-  // Version
-  Q_PROPERTY(QString version READ version)
+    // Version
+    Q_PROPERTY(QString version READ version)
 
-  public:
+public:
     explicit QXNConfig(QObject* parent = 0);
     ~QXNConfig();
 
@@ -150,16 +150,16 @@ class QXNConfig : public QObject
     // Version
     QString version() const;
 
-  signals:
+signals:
     void configurationSaved();
 
-  public slots:
+public slots:
     void load();
     void save();
 
     void setManualModeNow(bool);
 
-  protected:
+protected:
     _xneur_config* xnconfig;
 };
 

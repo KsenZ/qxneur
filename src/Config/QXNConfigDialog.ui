@@ -38,7 +38,7 @@
       <bool>true</bool>
      </property>
      <property name="currentRow">
-      <number>0</number>
+      <number>-1</number>
      </property>
      <item>
       <property name="text">
@@ -100,16 +100,6 @@
       <property name="icon">
        <iconset>
         <normalon>:/config/abbreviations.png</normalon>
-       </iconset>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Appearance</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normalon>:/config/appearance.png</normalon>
        </iconset>
       </property>
      </item>

@@ -14,24 +14,24 @@ class QXNKeyboard;
 
 class QXNTrayIcon : public QSystemTrayIcon
 {
-  Q_OBJECT
+    Q_OBJECT
 
-  public:
+public:
     QXNTrayIcon(QXNKeyboard* keyboard, QObject* parent=0);
     ~QXNTrayIcon();
 
-  signals:
+signals:
     void trigger();
     void doubleClicked();
 
-  public slots:
+public slots:
     void keyboardGroupChanged(QXNLanguage::Language);
     void layoutChanged();
 
-  protected slots:
+protected slots:
     void iconActivated(QSystemTrayIcon::ActivationReason);
 
-  protected:
+protected:
     QMap<QXNLanguage::Language,QIcon> _iconMap;
     QXNKeyboard* _keyboard;
 };
