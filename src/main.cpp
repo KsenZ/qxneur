@@ -1,5 +1,5 @@
 // Local
-#include "QXNeur.h" // QXNeur class is subclassed QApplication needed to provide the X11 event handling
+#include "QXNeur.h"
 
 int main(int argc, char** argv)
 {
