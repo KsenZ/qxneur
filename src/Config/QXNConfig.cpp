@@ -113,18 +113,6 @@ void QXNConfig::setAutoEducate(bool on)
 }
 
 
-// dont_process_when_press_enter parameter
-bool QXNConfig::noProcessOnEnter() const
-{
-    return xnconfig->dont_process_when_press_enter;
-}
-
-void QXNConfig::setNoProcessOnEnter(bool on)
-{
-    xnconfig->dont_process_when_press_enter = on;
-}
-
-
 // check_lang_on_process parameter
 bool QXNConfig::checkLanguageDuringInput() const
 {

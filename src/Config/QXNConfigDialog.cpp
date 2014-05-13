@@ -47,7 +47,6 @@ QXNConfigDialog::QXNConfigDialog(QXNConfig* config, QWidget* parent)
     // Working mode options
     mapper->setMapping(ui->manualModeCheckBox, m_xnconfig, "manualMode");
     mapper->setMapping(ui->selfEducateCheckBox, m_xnconfig, "autoEducate");
-    mapper->setMapping(ui->dontProcessOnEnterCheckBox, m_xnconfig, "noProcessOnEnter");
     mapper->setMapping(ui->checkLanguageDuringInputCheckBox, m_xnconfig, "checkLanguageDuringInput");
     mapper->setMapping(ui->logInputCheckBox, m_xnconfig, "saveKeyboardLog");
     mapper->setMapping(ui->autoCompletionCheckBox, m_xnconfig, "autoCompletion");

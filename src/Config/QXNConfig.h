@@ -19,7 +19,6 @@ class QXNConfig : public QObject
     // Working mode options
     Q_PROPERTY(bool manualMode READ manualMode WRITE setManualMode)
     Q_PROPERTY(bool autoEducate READ autoEducate WRITE setAutoEducate)
-    Q_PROPERTY(bool noProcessOnEnter READ noProcessOnEnter WRITE setNoProcessOnEnter)
     Q_PROPERTY(bool checkLanguageDuringInput READ checkLanguageDuringInput WRITE setCheckLanguageDuringInput)
     Q_PROPERTY(bool saveKeyboardLog READ saveKeyboardLog WRITE setSaveKeyboardLog)
     Q_PROPERTY(bool autoCompletion READ autoCompletion WRITE setAutoCompletion)
@@ -68,9 +67,6 @@ public:
 
     bool autoEducate() const;
     void setAutoEducate(bool);
-
-    bool noProcessOnEnter() const;
-    void setNoProcessOnEnter(bool);
 
     bool checkLanguageDuringInput() const;
     void setCheckLanguageDuringInput(bool);

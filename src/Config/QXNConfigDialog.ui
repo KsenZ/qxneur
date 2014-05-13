@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>659</width>
-    <height>418</height>
+    <width>657</width>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -121,7 +121,7 @@
        <item row="0" column="0">
         <widget class="QTabWidget" name="generalTabWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="generalTab">
           <attribute name="title">
@@ -238,13 +238,6 @@
            <string>Advanced</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_5">
-           <item>
-            <widget class="QCheckBox" name="dontProcessOnEnterCheckBox">
-             <property name="text">
-              <string>Don't process word on Enter or Tab</string>
-             </property>
-            </widget>
-           </item>
            <item>
             <widget class="QCheckBox" name="flushBuffersOnEnterCheckBox">
              <property name="text">
