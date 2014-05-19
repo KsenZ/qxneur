@@ -1,4 +1,4 @@
-qxneur
+QXNeur
 ======
 
 Qt frontend for XNeur

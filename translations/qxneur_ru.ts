@@ -426,6 +426,11 @@
         <translation>Аббревиатура</translation>
     </message>
     <message>
+	<location/>
+	<source>Special</source>
+	<translation>Специальное</translation>
+    </message>
+    <message>
         <location/>
         <source>Full text</source>
         <translation>Полный текст</translation>
@@ -577,3 +582,4 @@
     </message>
 </context>
 </TS>
+
