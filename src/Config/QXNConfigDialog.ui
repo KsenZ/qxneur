@@ -23,14 +23,14 @@
       </sizepolicy>
      </property>
      <property name="currentIndex">
-      <number>6</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="generalPage">
       <layout class="QGridLayout" name="gridLayout_3">
        <item row="0" column="0">
         <widget class="QTabWidget" name="generalTabWidget">
          <property name="currentIndex">
-          <number>2</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="generalTab">
           <attribute name="title">
@@ -141,84 +141,6 @@
             </spacer>
            </item>
           </layout>
-         </widget>
-         <widget class="QWidget" name="tab">
-          <attribute name="title">
-           <string>Страница</string>
-          </attribute>
-          <widget class="QGroupBox" name="miscOptionsGroupBox_3">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>40</y>
-             <width>411</width>
-             <height>251</height>
-            </rect>
-           </property>
-           <property name="title">
-            <string>Special options</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_3">
-            <property name="fieldGrowthPolicy">
-             <enum>QFormLayout::ExpandingFieldsGrow</enum>
-            </property>
-            <item row="0" column="0">
-             <widget class="QLabel" name="eventSendDelayLabel_3">
-              <property name="text">
-               <string>Event send delay (ms.):</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QSpinBox" name="eventSendDelaySpinBox_3">
-              <property name="minimum">
-               <number>0</number>
-              </property>
-              <property name="maximum">
-               <number>50</number>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QComboBox" name="logLevelCombo_3">
-              <item>
-               <property name="text">
-                <string>Error</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Warning</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Log</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Debug</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Trace</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="logLevelLabel_3">
-              <property name="text">
-               <string>Logging level:</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-          <zorder>listWidget</zorder>
-          <zorder>miscOptionsGroupBox_3</zorder>
          </widget>
         </widget>
        </item>
