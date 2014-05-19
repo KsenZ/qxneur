@@ -59,9 +59,8 @@ QXNConfigDialog::QXNConfigDialog(QXNConfig* config, QWidget* parent)
 
     // Advanced options
     mapper->setMapping(ui->saveSelectionCheckBox, m_xnconfig, "saveSelectionAfterConvert");
-//    mapper->setMapping(ui->flushBuffersOnEnterCheckBox, m_xnconfig, "flushInternalBuffers");
-//    mapper->setMapping(ui->eventSendDelaySpinBox, m_xnconfig, "eventSendDelay");
-//    mapper->setMapping(ui->logLevelCombo, "currentIndex", m_xnconfig, "logLevel");
+    mapper->setMapping(ui->eventSendDelaySpinBox, m_xnconfig, "eventSendDelay");
+    mapper->setMapping(ui->logLevelCombo, "currentIndex", m_xnconfig, "logLevel");
 
     //  mapper->setMapping(, m_xnconfig, "");
 }
