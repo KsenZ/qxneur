@@ -10,7 +10,6 @@ INCLUDE(common)
 # Qt
 FIND_PACKAGE(Qt4 4.6.0 REQUIRED)
 INCLUDE(${QT_USE_FILE})
-ADD_DEFINITIONS(-DQT_NO_CAST_FROM_ASCII)
 
 # Directories
 INCLUDE_DIRECTORIES(. src src/Config ${CMAKE_CURRENT_BINARY_DIR})
@@ -62,14 +61,17 @@ SET(bin_target qxneur)
 SET(tr_target qxneur_i18n)
 
 # Updating and generating the translation
-QT4_CREATE_TRANSLATION(qm_files ${CMAKE_CURRENT_SOURCE_DIR}/src ${translations} OPTIONS -no-ui-lines -locations relative -source-language english)
-ADD_CUSTOM_TARGET(${tr_target} DEPENDS ${qm_files})
+#QT4_CREATE_TRANSLATION(qm_files ${CMAKE_CURRENT_SOURCE_DIR}/src ${translations} OPTIONS -no-ui-lines -locations relative -source-language english)
+#ADD_CUSTOM_TARGET(${tr_target} DEPENDS ${qm_files})
 
 # Pre-processing by MOC, UIC and QRC
 QT4_WRAP_CPP(sources ${moc_headers})
 QT4_WRAP_CPP(sources src/PropertyMapper.h OPTIONS -fsrc/PropertyMapperPrivate.h)
 QT4_WRAP_UI(sources ${uis})
 QT4_ADD_RESOURCES(sources ${resources})
+
+set(TRANSLATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/qxneur/translations")
+add_definitions(-DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\")
 
 # Building the executable
 ADD_EXECUTABLE(${bin_target} ${sources})
