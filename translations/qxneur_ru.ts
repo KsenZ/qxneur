@@ -273,17 +273,17 @@
     <message>
         <location/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Действие</translation>
     </message>
     <message>
         <location/>
         <source>Sound file</source>
-        <translation type="unfinished"></translation>
+        <translation>Звуковой файл</translation>
     </message>
     <message>
         <location/>
         <source>XNeur start</source>
-        <translation type="unfinished"></translation>
+        <translation>XNeur запущен</translation>
     </message>
     <message>
         <location/>
@@ -293,7 +293,7 @@
     <message>
         <location/>
         <source>XNeur stop</source>
-        <translation type="unfinished"></translation>
+        <translation>XNeur остановлен</translation>
     </message>
     <message>
         <location/>
