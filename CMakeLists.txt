@@ -1,21 +1,21 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+CMAKE_MINIMUM_REQUIRED( VERSION 2.6 )
 
 # Project
-PROJECT(qxneur)
+PROJECT( qxneur )
 
 # Common CMake modules
-SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/CMake)
-INCLUDE(common)
+SET( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/CMake )
+INCLUDE( common )
 
 # Qt
-FIND_PACKAGE(Qt4 4.6.0 REQUIRED)
-INCLUDE(${QT_USE_FILE})
+FIND_PACKAGE( Qt4 4.6.0 REQUIRED )
+INCLUDE( ${QT_USE_FILE} )
 
 # Directories
-INCLUDE_DIRECTORIES(. src src/Config ${CMAKE_CURRENT_BINARY_DIR})
+INCLUDE_DIRECTORIES( . src src/Config ${CMAKE_CURRENT_BINARY_DIR} )
 
 
-SET(sources
+SET( QXNEUR_SRC
   src/main.cpp
   src/QXNeur.cpp
   src/QXNLanguage.cpp
@@ -30,7 +30,7 @@ SET(sources
   src/Config/QXNApplicationsModel.cpp
 )
 
-SET(moc_headers
+SET( QXNEUR_MOC_SRC
   src/QXNeur.h
   src/QXNLanguage.h
   src/QXNKeyboard.h
@@ -43,37 +43,49 @@ SET(moc_headers
   src/Config/QXNApplicationsModel.h
 )
 
-SET(uis
+SET( QXNEUR_UI_SRC
   src/Config/QXNConfigDialog.ui
   src/Config/QXNApplicationSettingsDialog.ui
   src/Config/QXNAbbreviationEditDialog.ui
 )
 
-SET(resources
+SET( QXNEUR_RCC_SRC
   images/images.qrc
 )
 
-SET(translations
+SET( QXNEUR_TS
   translations/qxneur_ru.ts
 )
 
-SET(bin_target qxneur)
-SET(tr_target qxneur_i18n)
+SET(BIN_TARGET qxneur)
 
 # Updating and generating the translation
 #QT4_CREATE_TRANSLATION(qm_files ${CMAKE_CURRENT_SOURCE_DIR}/src ${translations} OPTIONS -no-ui-lines -locations relative -source-language english)
 #ADD_CUSTOM_TARGET(${tr_target} DEPENDS ${qm_files})
 
 # Pre-processing by MOC, UIC and QRC
-QT4_WRAP_CPP(sources ${moc_headers})
-QT4_WRAP_CPP(sources src/PropertyMapper.h OPTIONS -fsrc/PropertyMapperPrivate.h)
-QT4_WRAP_UI(sources ${uis})
-QT4_ADD_RESOURCES(sources ${resources})
+QT4_WRAP_CPP( QXNEUR_MOC ${QXNEUR_MOC_SRC} )
+QT4_WRAP_CPP( QXNEUR_MOC src/PropertyMapper.h OPTIONS -fsrc/PropertyMapperPrivate.h )
+QT4_WRAP_UI( QXNEUR_UI ${QXNEUR_UI_SRC} )
+QT4_ADD_RESOURCES( QXNEUR_RCC ${QXNEUR_RCC_SRC} )
+QT4_ADD_TRANSLATION( QXNEUR_QM ${QXNEUR_TS} )
 
-set(TRANSLATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/qxneur/translations")
-add_definitions(-DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\")
+SET( TRANSLATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/qxneur/translations" )
+add_definitions( -DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\" )
 
 # Building the executable
-ADD_EXECUTABLE(${bin_target} ${sources})
-ADD_DEPENDENCIES(${bin_target} ${tr_target})
-TARGET_LINK_LIBRARIES(${bin_target} ${QT_LIBRARIES} xnconfig Xmu X11 xneur)
+ADD_EXECUTABLE( ${BIN_TARGET}
+    ${QXNEUR_SRC}
+    ${QXNEUR_MOC}
+    ${QXNEUR_UI}
+    ${QXNEUR_RCC}
+    ${QXNEUR_QM}
+)
+
+TARGET_LINK_LIBRARIES(${BIN_TARGET}
+    ${QT_LIBRARIES}
+    xnconfig
+    Xmu
+    X11
+    xneur
+)
